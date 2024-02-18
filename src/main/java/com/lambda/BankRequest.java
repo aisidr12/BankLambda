@@ -31,4 +31,13 @@ public class BankRequest {
     public void setTerm(Integer term) {
         this.term = term;
     }
+
+    @Override
+    public String toString() {
+        return "BankRequest{" +
+                "amount=" + amount +
+                ", rate=" + rate +
+                ", term=" + term +
+                '}';
+    }
 }
