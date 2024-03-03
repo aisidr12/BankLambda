@@ -19,8 +19,6 @@ FORMULA para obtener la cuota mensual  ===>   (P*I)/(1- (1+i)^(-n))
 
     @Override
     public BankResponse handleRequest(BankRequest bankRequest, Context context) {
-        String awsRequestId = context.getAwsRequestId();
-        System.out.println("Checking whats is awsRequestId  "+ awsRequestId);
         context.getLogger().log("Getting the request "+ bankRequest.toString());
         MathContext mathContext = MathContext.DECIMAL128;
         //amount
